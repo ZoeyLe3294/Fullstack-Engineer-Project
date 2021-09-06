@@ -33,4 +33,11 @@ In this project, you’ll use JavaScript to randomly create a three-course meal 
   >8. drop(array,n)
   >9. dropWhile(array,predicate)
   >10. chunk(array,size)
+ 
+### 5.Credit Card Checker
+
+  *Objective*:
+  >"The company that you work for suspects that credit card distributors have been mailing out cards that have invalid numbers. In this project, you have the role of a clerk who checks if credit cards are valid." 
+  >Validation Rules following [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm#Description)
+![image](https://user-images.githubusercontent.com/34385686/132255947-3d2ddcfd-4e1d-4594-9a70-7874b90c11ad.png)
 
