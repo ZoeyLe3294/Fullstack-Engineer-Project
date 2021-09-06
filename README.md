@@ -17,3 +17,20 @@ In this project, you’ll use JavaScript to randomly create a three-course meal 
 
   *Objective*:
   >"In this project, you will use what you know about iterating over arrays to improve the quality of a paragraph and gather some information about that paragraph. This is the same type of work that word processing software does. Additionally, you may have heard of linting, a process by which text is evaluated and improved by an application. In this project, you will create a miniature version of a linter using array methods that you have learned."
+
+### 4.Lodash Library
+
+  *Objective*:
+  >"Try to replicate some of the most exciting functionality from the widely-popular [lodash.js](https://lodash.com/docs/4.17.15) library which provides many methods that add new functionality for numbers, strings, objects, and arrays." 
+  >Here includes:
+  >1. clamp(number,lower,upper)
+  >2. inRange(number,start,end)
+  >3. words(string)
+  >4. pad(string,length)
+  >5. has(object,key)
+  >6. invert(object)
+  >7. findKey(object,predicate)
+  >8. drop(array,n)
+  >9. dropWhile(array,predicate)
+  >10. chunk(array,size)
+
