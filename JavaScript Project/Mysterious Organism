@@ -1,0 +1,103 @@
+/* Objective:
+You’re part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study.
+*/
+
+// Returns a random DNA base
+const returnRandBase = () => {
+  const dnaBases = ['A', 'T', 'C', 'G']
+  return dnaBases[Math.floor(Math.random() * 4)] 
+}
+
+// Returns a random single stand of DNA containing 15 bases
+const mockUpStrand = () => {
+  const newStrand = []
+  for (let i = 0; i < 15; i++) {
+    newStrand.push(returnRandBase())
+  }
+  return newStrand
+}
+
+//CREATE FACTORY FUNCTION
+let pAequorFactory = (num,arrayDNA) => {
+  return {
+    specimenNum: num,
+    dna: arrayDNA,
+    
+    /*Create a mutation from the given arrayDNA i.e every bases in the mutation must be different from original dna*/
+    mutate(){
+      return this.dna = this.dna.map(base => {
+        let newBase = returnRandBase()
+        while(newBase==base){newBase = returnRandBase()}
+        return newBase
+      })
+    },
+    
+    /*Provide the % similarity in dna strand of 2 qAequor object*/
+    compareDNA(pAequorObj){
+      let countIdentical = 0
+      for(let i=0;i<this.dna.length;i++){
+        if(this.dna[i]==pAequorObj.dna[i]){countIdentical++}
+      }
+      let rate = countIdentical*100/this.dna.length
+      // console.log(`specimen #1 and specimen #2 have ${rate.toFixed(2)}% DNA in common`)
+      return rate
+    },
+    
+    /*Check if dna contains 'C' or 'G' more than 60% i.e higher survival chance*/
+    willLikelySurvive(){
+      return this.dna.filter(base => base=='C'||base=='G').length/this.dna.length >= 0.6
+    },
+    
+    /*Create the complement strand followed rules 'A' exchange to 'T' and vice versa, and 'C' exchange to 'G' and vice versa*/
+    complementStrand(){
+      return this.dna.map(base => {
+        switch (base){
+          case 'A': return 'T'; break;
+          case 'T': return 'A'; break;
+          case 'C': return 'G'; break;
+          case 'G': return 'C'; break;
+        }
+      })
+    }
+  }
+}
+
+/*CREATE A SAMPLE OF SIZE 30 WITH PAEQUOR OBJECTS THAT HAVE HIGH LIKELY SURVIVAL CHANCE*/
+function generateSamples(){
+  let sampleSet = []
+  for(let i=0;i<30;i++){
+    let randSample = pAequorFactory(i,mockUpStrand())
+    while(!randSample.willLikelySurvive()){
+        randSample = pAequorFactory(i,mockUpStrand())
+    }
+    sampleSet.push(randSample)
+  }
+  return sampleSet
+}
+// console.log(generateSamples())
+
+/*OUT OF THE SAMPLESET RETURN THE PAIRS OF OBJECTS THAT HAVE MOST RELATED RATE*/
+function mostRelated(sampleSet){
+  let mostRelatedPair = ''
+  let mostRelatedRate = 0
+  for (let i=0; i<sampleSet.length-1; i++){
+    for (let j=1; j<sampleSet.length; j++){
+      let rate = sampleSet[i].compareDNA(sampleSet[j])
+      if( rate == mostRelatedRate){
+        mostRelatedRate = rate
+        mostRelatedPair+='['+sampleSet[i].dna.join('')+', '+sampleSet[j].dna.join('')+']'
+      }
+      if( rate > mostRelatedRate){
+        mostRelatedRate = rate
+        mostRelatedPair = '['+sampleSet[i].dna.join('')+', '+sampleSet[j].dna.join('')+']'
+      }
+    }
+  }
+  console.log( `Most related pair at ${(mostRelatedRate).toFixed(2)} is: ${mostRelatedPair}`)
+}
+mostRelated(generateSamples())
+
+
+
+
+
