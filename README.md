@@ -60,3 +60,27 @@ Note from the program:
 * The number of personalities in the list is not fixed
 
 * Job is basically a random available job in the pool
+
+Sample Output:
+```
+Here's your character information:
+Name: Athena
+You're a middle-age woman, strong build with platinum short cut and tan skin
+People says you're quite
+Your job is: developer
+
+==================================================
+
+Here's your character information:
+Name: Ariel
+You're a young girl, slim with long red tangled hair and white skin
+People says you're quite, timid, humble, selfish and hot-tempered
+Your job is: gambler
+
+==================================================
+Here's your character information:
+Name: Kai
+You're a Japanese old lady, aristocratic and powerful aura
+People says you're gentle, straightforward, brave, honest, ambitious, hot-tempered, timid, mischievous, quite and selfish
+Your job is: realtor
+```

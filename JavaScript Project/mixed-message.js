@@ -25,7 +25,6 @@ function characterCreation(){
     let personalityList = character.personality
     let personality = ''
     const ranPersonality = randomGenerator(personalityList.length)+1
-    console.log(ranPersonality)
     for (let i=0; i<ranPersonality; i++){
         let selection = personalityList[randomGenerator(personalityList.length)]
         if (i==ranPersonality-1){
