@@ -3,7 +3,7 @@ Projects while attending Codecademy courses.
 
 Please find README.md inside each folder for better description of projects
 
-## [Javascript projects](../blob/main/JavaScript%20Project/README.md)
+## [Javascript projects](../main/JavaScript%20Project/README.md)
 ### 1.Meal Maker
 ### 2.Team Stats
 ### 3.Mini Linter
