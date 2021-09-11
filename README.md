@@ -50,3 +50,13 @@ In this project, you’ll use JavaScript to randomly create a three-course meal 
 
   *Objective*:
   >"In this project, you’ll build a message generator program that outputs a new, random message every time a user runs the program."
+
+My program will generate a character information details including name, appearance, list of personalities and job.
+
+Note from the program:
+
+* Name and Appearance are attached to each others
+
+* The number of personalities in the list is not fixed
+
+* Job is basically a random available job in the pool
