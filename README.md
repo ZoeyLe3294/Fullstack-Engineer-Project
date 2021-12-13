@@ -11,3 +11,6 @@ Please find README.md inside each folder for better description of projects
 ### 5.Credit Card Checker
 ### 6.Mysterious Organism
 ### 7.Mixed Messages
+
+## [HTML/CSS projects](../main/HTML%20CSS%20Project/README.md)
+### 1.Website Styles Guide
