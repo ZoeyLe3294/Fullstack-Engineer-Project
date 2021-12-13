@@ -3,7 +3,7 @@ Projects while attending Codecademy courses.
 
 Please find README.md inside each folder for better description of projects
 
-## [Javascript projects](../main/JavaScript%20Project/README.md)
+## [Javascript projects](../main/JavaScript%20Project)
 ### 1.Meal Maker
 ### 2.Team Stats
 ### 3.Mini Linter
@@ -12,5 +12,5 @@ Please find README.md inside each folder for better description of projects
 ### 6.Mysterious Organism
 ### 7.Mixed Messages
 
-## [HTML/CSS projects](../main/HTML%20CSS%20Project/README.md)
+## [HTML/CSS projects](../main/HTML-CSS/Website%20Style%20Guide)
 ### 1.Website Styles Guide
