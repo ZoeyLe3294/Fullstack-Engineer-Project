@@ -14,3 +14,4 @@ Please find README.md inside each folder for better description of projects
 
 ## [HTML/CSS projects](../main/HTML-CSS/Website%20Style%20Guide)
 ### 1.Website Styles Guide
+### 2.Off-Platform Project: Tea Cozy
