@@ -15,3 +15,4 @@ Please find README.md inside each folder for better description of projects
 ## [HTML/CSS projects](../main/HTML-CSS)
 ### 1.Website Styles Guide
 ### 2.Off-Platform Project: Tea Cozy
+### 3.Flexbox Practice: ZL Ent. Website
