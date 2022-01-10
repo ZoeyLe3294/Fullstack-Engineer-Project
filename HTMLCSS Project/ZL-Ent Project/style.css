@@ -1,0 +1,93 @@
+html {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0);
+    font-family:'Texturina', serif;
+    color: beige;
+    text-align: center;
+}
+img {
+    object-fit:cover;
+    margin: 0;
+}
+#logo img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin: 0;
+}
+.container{
+    /* background-color: rgba(201, 198, 190, 0.884); */
+    /* background-color: ivory; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#head h1 {
+    font-size: 1.5rem;
+    color: #fad807;
+    margin: 0;
+    font-family: 'Texturina', serif;
+}
+#mission {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://drive.google.com/uc?export=view&id=1xDJCW07s0e0BJVczA7HwieAnFb2qUURo");
+    object-fit:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#poster {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+.card {
+    /* background-color: beige; */
+    width: 300px;
+    height: 400px;
+    margin: 1%;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.glow {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b39b00, 0 0 40px #b39b00, 0 0 50px #b39b00, 0 0 60px #b39b00, 0 0 70px #b39b00; */
+      text-shadow: 0 0 10px #fff, 0 0 20px #b39b00, 0 0 30px #b39b00, 0 0 40px #b39b00;
+    }
+    to {
+      /* text-shadow: 0 0 20px #fff, 0 0 30px #fad807, 0 0 40px #fad807, 0 0 50px #fad807, 0 0 60px #fad807, 0 0 70px #fad807, 0 0 80px #fad807; */
+      text-shadow: 0 0 20px #fff, 0 0 30px #fad807, 0 0 40px #fad807, 0 0 50px #fad807;
+    }
+  }
+#creator {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    margin: auto;
+    object-fit: cover;
+    overflow:hidden;
+    border-radius: 50%;
+}
+#creator img{
+    width: 150%;
+}
+#poster-header {
+ font-size: 2rem;
+ text-decoration: underline;
+ margin: 5% 0;
+}
